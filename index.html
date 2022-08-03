@@ -74,9 +74,19 @@
 					<h3>{{title}}</h3>
 				</span>
 				<div id="info-body">
+					<br>
+					{{#if location_type}}
+						<p class="notes type">Type: {{location_type}}</p>
+					{{/if}}
+					{{#if risk}}
+					<p class="notes risk">Risk Level: {{risk}}</p>
+					{{/if}}
+					{{#if police}}
+					<p class="notes police">Police Attendance: {{police}}</p>
+					{{/if}}
 					{{#if notes}}
-						<br>
-						<p class="notes">{{notes}}</p>
+						<hr>
+						<p class="notes">{{{notes}}}</p>
 					{{/if}}
 					{{#if video}}
 						<div class="video-{{id}}">

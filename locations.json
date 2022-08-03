@@ -900,5 +900,241 @@
 		"latlngarray": [
 			{"lat": -48.734, "lng": -18.213}
 		]
+	},
+	{
+		"id": 1064,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -51.221, "lng": -64.020}
+		]
+	},
+	{
+		"id": 1065,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -51.958, "lng": -61.603}
+		]
+	},
+	{
+		"id": 1066,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -52.067, "lng": -58.526}
+		]
+	},
+	{
+		"id": 1067,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -52.067, "lng": -57.153}
+		]
+	},
+	{
+		"id": 1068,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -51.434, "lng": -56.835}
+		]
+	},
+	{
+		"id": 1069,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -49.204, "lng": -55.648}
+		]
+	},
+	{
+		"id": 1070,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -47.836, "lng": -48.133}
+		]
+	},
+	{
+		"id": 1071,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -47.688, "lng": -46.090}
+		]
+	},
+	{
+		"id": 1072,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -47.688, "lng": -46.090}
+		]
+	},
+	{
+		"id": 1073,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -49.075, "lng": -40.450}
+		]
+	},
+	{
+		"id": 1074,
+		"type": "Known Locations",
+		"title": "Quarry",
+		"location_type": "Compound",
+		"risk": "Low",
+		"police": "Not Required",
+		"notes": "Vehicle Advisories: L",
+		"order": 0,
+		"strokecolor": "f5b342",
+		"fillcolor": "f5b342",
+		"latlngarray": [
+			{"lat": 16.878, "lng": 58.320},
+			{"lat": 14.381, "lng": 59.441},
+			{"lat": 15.061, "lng": 63.198},
+			{"lat": 16.541, "lng": 66.801},
+			{"lat": 13.571, "lng": 70.185},
+			{"lat": 14.402, "lng": 72.646},
+			{"lat": 15.676, "lng": 74.734},
+			{"lat": 18.636, "lng": 74.492},
+			{"lat": 21.115, "lng": 74.865},
+			{"lat": 23.473, "lng": 74.690},
+			{"lat": 24.717, "lng": 72.536},
+			{"lat": 22.766, "lng": 70.405},
+			{"lat": 21.749, "lng": 68.999},
+			{"lat": 22.907, "lng": 66.516},
+			{"lat": 22.928, "lng": 63.286},
+			{"lat": 21.688, "lng": 61.089}
+		]
+	},
+	{
+		"id": 1075,
+		"type": "Known Locations",
+		"title": "Prison",
+		"notes": "",
+		"order": 0,
+		"strokecolor": "f5b342",
+		"fillcolor": "f5b342",
+		"latlngarray": [
+			{"lat": 8.073, "lng": 29.026},
+			{"lat": 5.586, "lng": 32.960},
+			{"lat": 6.040, "lng": 36.599},
+			{"lat": 8.525, "lng": 38.774},
+			{"lat": 10.345, "lng": 39.499},
+			{"lat": 15.688, "lng": 39.386},
+			{"lat": 17.631, "lng": 36.709},
+			{"lat": 17.757, "lng": 32.666},
+			{"lat": 15.293, "lng": 29.985},
+			{"lat": 11.983, "lng": 28.491}
+		]
+	},
+	{
+		"id": 1076,
+		"type": "Known Locations",
+		"title": "Stab City",
+		"notes": "",
+		"order": 0,
+		"strokecolor": "f5b342",
+		"fillcolor": "f5b342",
+		"latlngarray": [
+			{"lat": 38.510, "lng": -15.139},
+			{"lat": 37.715, "lng": -11.668},
+			{"lat": 41.060, "lng": -10.635},
+			{"lat": 42.485, "lng": -12.986},
+			{"lat": 40.744, "lng": -15.843}
+		]
+	},
+	{
+		"id": 1077,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": 13.555, "lng": 58.769}
+		]
+	},
+	{
+		"id": 1078,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -71.870, "lng": -35.608}
+		]
+	},
+	{
+		"id": 1079,
+		"type": "Hydrants",
+		"title": "",
+		"notes": "",
+		"order": 0,
+		"point": true,
+		"strokecolor": "f54242",
+		"fillcolor": "f54242",
+		"latlngarray": [
+			{"lat": -71.774, "lng": -37.036}
+		]
 	}
 ]

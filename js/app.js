@@ -135,7 +135,7 @@ $(function() {
 			enabled: true,
 		},
 		{
-			name: 'Territories',
+			name: 'Known Locations',
 			icon: 'General/wall-breach.png',
 			type: 'General',
 			enabled: true,
@@ -244,7 +244,7 @@ $(function() {
 				.forEach(function(element, index) {
 					bounds.extend(element);
 				});
-			// map.panTo(bounds.getCenter());
+			map.panTo(bounds.getCenter());
 			map.setZoom(7);
 		},
 
@@ -472,7 +472,7 @@ $(function() {
 				.forEach(function(element, index) {
 					bounds.extend(element);
 				});
-			// infoWindow.setPosition(bounds.getCenter());
+			infoWindow.setPosition(bounds.getCenter());
 			infoWindow.open(this.map);
 
 			this.closePopupLocation();
