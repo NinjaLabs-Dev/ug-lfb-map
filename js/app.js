@@ -29,22 +29,50 @@ $(function() {
 		initialize: function() {
 			var polyCoords = this.get('latlngarray');
 
-			var marker = new google.maps.Polygon({
-				paths: polyCoords,
-				strokeColor: '#' + this.get('strokecolor'),
-				strokeOpacity: 0.8,
-				strokeWeight: 2,
-				fillColor: '#' + this.get('fillcolor'),
-				fillOpacity: 0.35,
-			});
+			const iconBase =
+				"https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+			const icons = {
+				parking: {
+					icon: iconBase + "parking_lot_maps.png",
+				},
+				library: {
+					icon: iconBase + "library_maps.png",
+				},
+				info: {
+					icon: iconBase + "info-i_maps.png",
+				},
+			};
 
-			var bounds = new google.maps.LatLngBounds();
-			polyCoords.forEach(function(element, index) {
-				bounds.extend(element);
-			});
+			if(!this.get('point')) {
+				var bounds = new google.maps.LatLngBounds();
+				polyCoords.forEach(function(element, index) {
+					bounds.extend(element);
+				});
+			}
+
+			if(this.get('point')) {
+				var marker = new google.maps.Circle({
+					strokeColor: '#' + this.get('strokecolor'),
+					strokeOpacity: 0.8,
+					strokeWeight: 2,
+					fillColor: '#' + this.get('fillcolor'),
+					fillOpacity: 0.35,
+					center: polyCoords[0],
+					radius: 20000,
+				})
+			} else {
+				var marker = new google.maps.Polygon({
+					paths: polyCoords,
+					strokeColor: '#' + this.get('strokecolor'),
+					strokeOpacity: 0.8,
+					strokeWeight: 2,
+					fillColor: '#' + this.get('fillcolor'),
+					fillOpacity: 0.35,
+				});
+			}
 
 			var mapLabel = new MapLabel({
-				position: bounds.getCenter(),
+				position: this.get('point') ? polyCoords[0] : bounds.getCenter(),
 				text: this.get('title'),
 				strokeWeight: 1,
 				strokeColor: '#000000',
@@ -101,7 +129,7 @@ $(function() {
 
 	var categories = (window.cats = new CategoriesCollection([
 		{
-			name: 'Neighborhoods',
+			name: 'Hydrants',
 			icon: 'radar/radar_warehouse.png',
 			type: 'General',
 			enabled: true,
@@ -113,49 +141,11 @@ $(function() {
 			enabled: true,
 		},
 		{
-			name: 'Neutral',
-			icon: 'General/glitches.png',
+			name: 'Fire Stations',
+			icon: 'General/wall-breach.png',
 			type: 'General',
 			enabled: true,
-		},
-		{
-			name: 'Automotive',
-			icon: 'radar/radar_acsr_race_hotring.png',
-			type: 'General',
-			enabled: true,
-		},
-		{
-			name: 'Heists',
-			icon: 'radar/radar_heist.png',
-			type: 'General',
-			enabled: true,
-		},
-		{
-			name: 'Legal',
-			icon: 'radar/radar_police_station.png',
-			type: 'General',
-			enabled: true,
-	   },
-		{
-			name: 'Medical',
-			icon: 'radar/radar_hospital.png',
-			type: 'General',
-			enabled: true,
-		},
-		{
-			name: 'Restaurants',
-			icon: 'radar/radar_bar.png',
-			type: 'General',
-			enabled: true,
-		},
-		/*
-		{
-			name: 'Deprecated',
-			icon: 'General/glitches.png',
-			type: 'General',
-			enabled: false,
-		},
-		*/
+		}
 	]));
 
 	var showingLabels;
@@ -254,7 +244,7 @@ $(function() {
 				.forEach(function(element, index) {
 					bounds.extend(element);
 				});
-			map.panTo(bounds.getCenter());
+			// map.panTo(bounds.getCenter());
 			map.setZoom(7);
 		},
 
@@ -482,7 +472,7 @@ $(function() {
 				.forEach(function(element, index) {
 					bounds.extend(element);
 				});
-			infoWindow.setPosition(bounds.getCenter());
+			// infoWindow.setPosition(bounds.getCenter());
 			infoWindow.open(this.map);
 
 			this.closePopupLocation();
