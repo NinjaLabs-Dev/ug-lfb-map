@@ -130,7 +130,7 @@ $(function() {
 	var categories = (window.cats = new CategoriesCollection([
 		{
 			name: 'Hydrants',
-			icon: 'radar/radar_warehouse.png',
+			icon: 'General/hydrant.png',
 			type: 'General',
 			enabled: true,
 		},
